@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".register">
+
+<!--    <TextView-->
+<!--        android:id="@+id/register"-->
+<!--        android:layout_width="92dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:text="REGISTER"-->
+<!--        android:textColor="#000000"-->
+<!--        android:textSize="18sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:layout_marginTop="50px"/>-->
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center"
+        android:padding="12dp"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        android:background="@drawable/edit_text_border2"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="238dp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:layout_gravity="center"
+        android:layout_marginTop="80px"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_border2"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="238dp"/>
+
+    <EditText
+        android:id="@+id/nic"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="NIC"
+        android:layout_gravity="center"
+        android:layout_marginTop="80px"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_border2"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="238dp"/>
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Phone"
+        android:layout_gravity="center"
+        android:layout_marginTop="80px"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_border2"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="238dp"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:layout_gravity="center"
+        android:layout_marginTop="80px"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_border2"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="238dp"/>
+
+    <EditText
+        android:id="@+id/reEnterpassword"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:layout_gravity="center"
+        android:layout_marginTop="80px"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_border2"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="238dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:text="AGREED TO TERMS AND CONDITION"
+        android:layout_gravity="center"
+        android:layout_marginTop="80px"
+        />
+
+<!--    <Button-->
+<!--        android:id="@+id/registerButton"-->
+<!--        android:layout_width="150dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginTop="120px"-->
+<!--        android:background="#002CCC"-->
+<!--        android:text="REGISTER" />-->
+
+    <Button
+        android:id="@+id/button6"
+        android:background="@drawable/rounded_corners2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="698dp" />
+
+</LinearLayout>

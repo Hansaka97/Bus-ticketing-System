@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#002CCC"
+    tools:context=".login"
+    >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="195dp"
+        android:layout_height="259dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/logo"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="138dp"
+        android:layout_marginTop="0dp"/>
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:hint="Username"
+        android:background="@drawable/edit_text_border"
+        android:inputType="textPersonName"
+        android:textColor="#0B0A0A"
+        android:textColorHint="#0B0A0A"
+        android:textSize="16dp"
+        android:textAlignment="center"
+        android:padding="13dp"
+        android:layout_marginTop="10dp"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="449dp" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_border"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        android:padding="13dp"
+        android:textColor="#090909"
+        android:textColorHint="#050505"
+        android:textSize="16dp"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="449dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Remember Me"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFFFFF"
+        app:buttonTint="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="260dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:background="@drawable/rounded_corners"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textColor="#F3F4F4"
+        android:text="Forgot Password?" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textColor="#FFFFFF"
+        android:text="BUS TICKETING 1.0.0" />
+
+    <TextView
+        android:id="@+id/textView212"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:layout_gravity="center"
+        android:textColor="#FFFFFF"
+        android:text="Ceylon Transport Board © 2019" />
+
+</LinearLayout>

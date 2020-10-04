@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.accountDetails.AccountDetailsFragment">
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView2"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="8dp"-->
+    <!--        android:layout_marginTop="8dp"-->
+    <!--        android:layout_marginEnd="8dp"-->
+    <!--        android:textSize="20sp"-->
+    <!--         />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/button"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Account Details View"-->
+    <!--        tools:layout_editor_absoluteX="114dp"-->
+    <!--        tools:layout_editor_absoluteY="405dp" />-->
+
+    <Spinner
+        android:id="@+id/bank"
+        android:layout_width="285dp"
+        android:layout_height="44dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="150px"
+        android:ems="10"
+        android:padding="12dp"
+        android:hint="Bank"
+        android:background="@drawable/edit_text_border2"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="238dp"/>
+
+    <EditText
+        android:id="@+id/branch"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_gravity="center"
+        android:layout_marginTop="80px"
+        android:padding="12dp"
+        android:hint="Branch"
+        android:background="@drawable/edit_text_border2"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="238dp"/>
+
+    <EditText
+        android:id="@+id/accNumber"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_gravity="center"
+        android:layout_marginTop="80px"
+        android:padding="12dp"
+        android:hint="Account Number"
+        android:background="@drawable/edit_text_border2"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="238dp"/>
+
+    <EditText
+        android:id="@+id/accName"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_gravity="center"
+        android:layout_marginTop="80px"
+        android:padding="12dp"
+        android:hint="Account Name"
+        android:background="@drawable/edit_text_border2"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="238dp"/>
+
+    <EditText
+        android:id="@+id/cardNumber"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_gravity="center"
+        android:layout_marginTop="80px"
+        android:padding="12dp"
+        android:hint="Card Number"
+        android:background="@drawable/edit_text_border2"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="238dp"/>
+
+    <EditText
+        android:id="@+id/cvc"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_gravity="center"
+        android:layout_marginTop="80px"
+        android:padding="12dp"
+        android:hint="CVC"
+        android:background="@drawable/edit_text_border2"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="238dp"/>
+
+    <Button
+        android:id="@+id/add"
+        android:background="@drawable/rounded_corners2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="698dp" />
+
+</LinearLayout>
