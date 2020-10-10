@@ -1,136 +1,195 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="@drawable/bus_vertical"
     tools:context=".register">
 
-<!--    <TextView-->
-<!--        android:id="@+id/register"-->
-<!--        android:layout_width="92dp"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_gravity="center"-->
-<!--        android:text="REGISTER"-->
-<!--        android:textColor="#000000"-->
-<!--        android:textSize="18sp"-->
-<!--        android:textStyle="bold"-->
-<!--        android:layout_marginTop="50px"/>-->
+    <!--    <TextView-->
+    <!--        android:id="@+id/register"-->
+    <!--        android:layout_width="92dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:text="REGISTER"-->
+    <!--        android:textColor="#000000"-->
+    <!--        android:textSize="18sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        android:layout_marginTop="50px"/>-->
 
     <EditText
-        android:id="@+id/editText2"
-        android:layout_width="285dp"
-        android:layout_height="wrap_content"
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="359dp"
+        android:layout_height="667dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/rounded_corners_white_bg"
+        android:clickable="false"
+        android:contextClickable="false"
+        android:cursorVisible="false"
+        android:editable="false"
+        android:elegantTextHeight="false"
         android:ems="10"
-        android:layout_marginTop="80dp"
-        android:layout_gravity="center"
-        android:padding="12dp"
+        android:enabled="false"
         android:inputType="textPersonName"
+        android:keepScreenOn="false"
+        android:keyboardNavigationCluster="false"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    <Button-->
+    <!--        android:id="@+id/registerButton"-->
+    <!--        android:layout_width="150dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:layout_marginTop="120px"-->
+    <!--        android:background="#002CCC"-->
+    <!--        android:text="REGISTER" />-->
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="88dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bus_ticket" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="63dp"
+        android:background="@drawable/edit_text_border2"
+        android:ems="10"
         android:hint="Name"
-        android:background="@drawable/edit_text_border2"
-        tools:layout_editor_absoluteX="195dp"
-        tools:layout_editor_absoluteY="238dp" />
-
-    <EditText
-        android:id="@+id/email"
-        android:layout_width="285dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        android:hint="Email"
-        android:layout_gravity="center"
-        android:layout_marginTop="80px"
-        android:padding="12dp"
-        android:background="@drawable/edit_text_border2"
-        tools:layout_editor_absoluteX="195dp"
-        tools:layout_editor_absoluteY="238dp"/>
-
-    <EditText
-        android:id="@+id/nic"
-        android:layout_width="285dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
         android:inputType="textPersonName"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <EditText
+        android:id="@+id/emaileditTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="63dp"
+        android:background="@drawable/edit_text_border2"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+
+    <EditText
+        android:id="@+id/niceditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="63dp"
+        android:background="@drawable/edit_text_border2"
+        android:ems="10"
         android:hint="NIC"
-        android:layout_gravity="center"
-        android:layout_marginTop="80px"
+        android:inputType="textPersonName"
         android:padding="12dp"
-        android:background="@drawable/edit_text_border2"
-        tools:layout_editor_absoluteX="195dp"
-        tools:layout_editor_absoluteY="238dp"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emaileditTxt" />
 
     <EditText
-        android:id="@+id/phone"
-        android:layout_width="285dp"
+        android:id="@+id/phoneEditText"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="63dp"
+        android:background="@drawable/edit_text_border2"
         android:ems="10"
+        android:hint="Phone Number"
         android:inputType="phone"
-        android:hint="Phone"
-        android:layout_gravity="center"
-        android:layout_marginTop="80px"
         android:padding="12dp"
-        android:background="@drawable/edit_text_border2"
-        tools:layout_editor_absoluteX="195dp"
-        tools:layout_editor_absoluteY="238dp"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/niceditText" />
 
     <EditText
-        android:id="@+id/password"
-        android:layout_width="285dp"
+        android:id="@+id/passwordeditTxt"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:hint="Password"
-        android:layout_gravity="center"
-        android:layout_marginTop="80px"
-        android:padding="12dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="63dp"
         android:background="@drawable/edit_text_border2"
-        tools:layout_editor_absoluteX="195dp"
-        tools:layout_editor_absoluteY="238dp"/>
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneEditText" />
 
     <EditText
         android:id="@+id/reEnterpassword"
-        android:layout_width="285dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:hint="Password"
-        android:layout_gravity="center"
-        android:layout_marginTop="80px"
-        android:padding="12dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="63dp"
         android:background="@drawable/edit_text_border2"
-        tools:layout_editor_absoluteX="195dp"
-        tools:layout_editor_absoluteY="238dp"/>
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordeditTxt" />
 
     <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="285dp"
+        android:id="@+id/checkBoxAggree"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="63dp"
         android:text="AGREED TO TERMS AND CONDITION"
-        android:layout_gravity="center"
-        android:layout_marginTop="80px"
-        />
-
-<!--    <Button-->
-<!--        android:id="@+id/registerButton"-->
-<!--        android:layout_width="150dp"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_gravity="center"-->
-<!--        android:layout_marginTop="120px"-->
-<!--        android:background="#002CCC"-->
-<!--        android:text="REGISTER" />-->
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reEnterpassword" />
 
     <Button
-        android:id="@+id/button6"
-        android:background="@drawable/rounded_corners2"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
+        android:id="@+id/buttonRegister"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_corners_registerbtn"
         android:text="REGISTER"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="30dp"
-        android:layout_gravity="center"
         android:textColor="#ffffff"
-        tools:layout_editor_absoluteX="195dp"
-        tools:layout_editor_absoluteY="698dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxAggree" />
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
