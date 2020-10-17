@@ -152,7 +152,7 @@
         android:id="@+id/textView212"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ceylon Transport Board © 2019"
+        android:text="Develop by 2020-REG-WE-08 © 2020"
         android:textColor="@android:color/darker_gray"
         android:textSize="12dp"
         app:layout_constraintEnd_toEndOf="parent"

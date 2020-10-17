@@ -34,7 +34,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.Viewholder> {
     @Override
     public void onBindViewHolder(@NonNull Viewholder viewholder, int position) {
 
-        String name = "";
+        String name = modelList.get(position).getName();;
         String seatCount = modelList.get(position).getNoOfSeats();
         String totalFare  = modelList.get(position).getTotalFare();
         String payMethod = modelList.get(position).getPaymentMethod();
