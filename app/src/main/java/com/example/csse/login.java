@@ -64,16 +64,19 @@ public class login extends AppCompatActivity {
                                 //System.out.println(response.getClass());
                                // System.out.println(response.body().getEmail());
                                 //System.out.println(call);
-                                String userType = response.body().getType();
-
 
 
                                 if(response.code() == 200){
-
+                                    String userType  = response.body().getType();
                                     if(userType.equals("2")){
-
+                                        Intent i = new Intent(getApplicationContext(), Driver_Home.class);
+                                        i.putExtra("email", emailEdit.getText().toString());
+                                        i.putExtra("_id", response.body().get_id());
+                                        startActivity(i);
                                     } else if(userType.equals("3")){
                                         Intent i = new Intent(getApplicationContext(), MainActivity.class);
+                                        i.putExtra("email", emailEdit.getText().toString());
+                                        i.putExtra("_id", response.body().get_id());
                                         startActivity(i);
                                     }
 

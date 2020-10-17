@@ -7,13 +7,17 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/bus_ticket"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Account"></activity>
+        <activity android:name=".PassengerList"></activity>
+        <activity android:name=".StartTrip" />
+        <activity android:name=".PassengerConfirmation" />
+        <activity android:name=".Driver_Home" />
+        <activity android:name=".Account" />
         <activity android:name=".ScannerActivity" />
         <activity android:name=".login">
             <intent-filter>
@@ -22,11 +26,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".register"></activity>
+        <activity android:name=".register" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

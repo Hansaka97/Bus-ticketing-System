@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CSSE</string>
+    <string name="app_name">Bus Ticketing System</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
@@ -14,4 +14,25 @@
     <string name="view_time_table">View Time Table</string>
     <string name="find_bus">Find Bus</string>
     <string name="date">date</string>
+    <string name="start_session">START SESSION</string>
+    <string name="end_session">END Session</string>
+    <string name="no_of_passengers_in_the_bus">No of Passengers in the Bus</string>
+    <string name="you_can_find_no_of_passengers_in_your_bus_now">You Can find No of Passengers in your bus now!!!</string>
+    <string name="home">Home</string>
+    <string name="submit">SUBMIT</string>
+
+    <string name="ng_7070">NG-7070</string>
+    <string name="start_from">Start From :</string>
+    <string name="pay_and_start_journy"><![CDATA[Pay & Start Journy]]></string>
+    <string name="pluse">+</string>
+    <string name="pay_by_cash">Pay by Cash</string>
+    <string name="kadawatha_matara">Kadawatha - Matara</string>
+    <string name="bus_no">Bus No :</string>
+    <string name="start_time">Start Time :</string>
+    <string name="seat_count">Seat Count :</string>
+    <string name="bus_fare">Bus Fare :</string>
+    <string name="sorry_your_account_balance_is_low_please_recharge_the_account">Sorry!!! Your account balance is low. Please recharge the account.</string>
+    <string name="x">X</string>
+    <string name="_10_30_am">10:30.AM</string>
+    <string name="express_way">Express Way</string>
 </resources>

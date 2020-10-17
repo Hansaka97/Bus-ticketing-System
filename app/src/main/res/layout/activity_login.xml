@@ -73,7 +73,7 @@
         android:background="@drawable/edit_text_border"
         android:ems="10"
         android:hint="Password"
-        android:inputType="textPersonName"
+        android:inputType="textPersonName|textPassword"
         android:padding="13dp"
         android:textAlignment="center"
         android:textColor="#090909"

@@ -75,7 +75,7 @@ public class Account extends AppCompatActivity {
 
                             if(response.code() == 200){
 
-                                Intent i = new Intent(getApplicationContext(), MainActivity.class);
+                                Intent i = new Intent(getApplicationContext(), login.class);
                                 i.putExtra("email", emailText.getText().toString());
                                 i.putExtra("name", nameText.getText().toString());
                                 startActivity(i);

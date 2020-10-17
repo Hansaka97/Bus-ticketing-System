@@ -15,6 +15,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
+import com.example.csse.MainActivity;
 import com.example.csse.R;
 import com.example.csse.ScannerActivity;
 
@@ -40,7 +41,13 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View view) {
                // Toast.makeText(getActivity(),"Hello Javatpoint",Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(getActivity(), ScannerActivity.class));
+               // startActivity(new Intent(getActivity(), ScannerActivity.class));
+                Intent i = new Intent(getActivity(), ScannerActivity.class);
+                i.putExtra("email", MainActivity.email);
+                i.putExtra("_id", MainActivity.user_id);
+                startActivity(i);
+
+
             }
         });
         return root;

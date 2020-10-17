@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_home"
+    tools:context=".Driver_Home">
+
+    <Button
+        android:id="@+id/buttonSessionStart"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="74dp"
+        android:background="@drawable/rounded_corners_greenbg"
+        android:text="@string/start_session"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeGroup" />
+
+    <Button
+        android:id="@+id/buttonSessionEnd"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="74dp"
+        android:background="@drawable/rounded_corners_redbg"
+        android:text="@string/end_session"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSessionStart" />
+
+    <Button
+        android:id="@+id/buttonNoOfPassenger"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="82dp"
+        android:background="@drawable/rounded_corners_registerbtn"
+        android:text="@string/no_of_passengers_in_the_bus"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="68dp"
+        android:text="@string/you_can_find_no_of_passengers_in_your_bus_now"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSessionEnd" />
+
+    <Button
+        android:id="@+id/buttonSubmit2"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="31dp"
+        android:background="@drawable/rounded_corners_homebtn"
+        android:text="@string/home"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/busNoTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/ng_7070"
+        android:textAlignment="viewStart"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSubmit2" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/start_from"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/start_time"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="mm"
+        android:inputType="number"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/locationGroup" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/bus_no"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSubmit2" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="22dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="20dp"
+        android:text="  : "
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumber"
+        app:layout_constraintTop_toBottomOf="@+id/locationGroup" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="hh"
+        android:inputType="number"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/locationGroup" />
+
+    <RadioGroup
+        android:id="@+id/locationGroup"
+        android:layout_width="0dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="42dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/busNoTxt">
+
+        <RadioButton
+            android:id="@+id/radioButton01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RadioButton" />
+
+        <RadioButton
+            android:id="@+id/radioButton02"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:text="RadioButton" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/timeGroup"
+        android:layout_width="101dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumber2"
+        app:layout_constraintTop_toBottomOf="@+id/locationGroup">
+
+        <RadioButton
+            android:id="@+id/radioButtonAm"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:text="AM" />
+
+        <RadioButton
+            android:id="@+id/radioButton2PM"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:text="PM" />
+    </RadioGroup>
+
+    <ImageButton
+        android:id="@+id/ButtonLogout"
+        android:layout_width="34dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/rounded_corners"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/abc_vector_test" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

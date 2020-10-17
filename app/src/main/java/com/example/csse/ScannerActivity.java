@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.Manifest;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -23,7 +24,11 @@ import com.karumi.dexter.listener.single.PermissionListener;
 public class ScannerActivity extends AppCompatActivity {
     CodeScanner codeScanner;
     CodeScannerView scannView;
-    TextView resultData;
+
+    private static String user_id = "";
+    private static String email = "";
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +37,14 @@ public class ScannerActivity extends AppCompatActivity {
         scannView = findViewById(R.id.scanner_view);
         codeScanner = new CodeScanner(this,scannView);
 
-        resultData = findViewById(R.id.resultofQr);
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            email = extras.getString("email");
+            user_id = extras.getString("_id");
+        }
+
+        System.out.println("User Email : " + email);
+        System.out.println("User User ID : " + user_id);
 
         codeScanner.setDecodeCallback(new DecodeCallback() {
             @Override
@@ -40,7 +52,13 @@ public class ScannerActivity extends AppCompatActivity {
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        resultData.setText(result.getText());
+                        //resultData.setText(result.getText());
+                        Intent i = new Intent(getApplicationContext(), PassengerConfirmation.class);
+                        i.putExtra("bus_id",result.getText());
+                        i.putExtra("email", email);
+                        i.putExtra("_id", user_id);
+                        startActivity(i);
+                        
                     }
                 });
             }

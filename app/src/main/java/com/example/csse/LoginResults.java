@@ -4,6 +4,8 @@ import com.google.gson.annotations.SerializedName;
 
 public class LoginResults {
 
+    private String _id;
+
     private String name;
 
     @SerializedName("email")
@@ -15,6 +17,14 @@ public class LoginResults {
 
     public String getName() {
         return name;
+    }
+
+    public String get_id() {
+        return _id;
+    }
+
+    public void set_id(String _id) {
+        this._id = _id;
     }
 
     public String getIs_change() {
